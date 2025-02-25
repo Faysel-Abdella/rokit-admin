@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import img from "@/assets/headericon.svg";
-import { Button } from "@heroui/react";
 
 const Header = () => {
   return (
@@ -13,12 +12,12 @@ const Header = () => {
       </div>
 
       <div className="flex items-center font-bold gap-5 text-black">
-        <Button className="bg-white font-bold w-[84px] rounded-sm ">
+        <button className="bg-white font-bold  rounded-sm w-[84px] py-2">
           삭제
-        </Button>
-        <Button className="bg-mainOrange font-bold rounded-sm w-[84px] ">
+        </button>
+        <button className="bg-mainOrange font-bold rounded-sm w-[84px] py-2">
           저장
-        </Button>
+        </button>
       </div>
     </div>
   );

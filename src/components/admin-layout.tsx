@@ -2,7 +2,6 @@
 import React, { useState, useCallback } from "react";
 import { AdminSidebar } from "./admin-sidebar";
 import { FaChevronRight } from "react-icons/fa";
-import { Button } from "@heroui/button";
 
 interface AdminLayoutProps {
   children: React.ReactNode;
@@ -32,14 +31,13 @@ export function AdminLayout({ children }: AdminLayoutProps) {
 
         {/* Show arrow button only when sidebar is hidden */}
         {!isSidebarOpen && (
-          <Button
-            variant="ghost"
+          <button
             onClick={() => setIsSidebarOpen(true)}
-            className="fixed flex justify-center items-center left-0 top-3 w-10 h-10 z-50 text-white bg-[#3F3F3F]  rounded-lg "
+            className="fixed flex justify-center items-center left-0 top-3 w-10 h-10 z-50 text-white bg-[#3F3F3F]  rounded-lg py-2"
             aria-label="Show sidebar"
           >
             <FaChevronRight className="h-6 w-6" />
-          </Button>
+          </button>
         )}
       </div>
 

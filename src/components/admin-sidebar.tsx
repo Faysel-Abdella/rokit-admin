@@ -12,7 +12,6 @@ import Pdf from "@/assets/nav-icons/pdf.svg";
 import User from "@/assets/nav-icons/user.svg";
 import AdminLog from "@/assets/nav-icons/adminlog.svg";
 import Home from "@/assets/nav-icons/home.svg";
-import { Button } from "@heroui/button";
 import { AiOutlineMenu } from "react-icons/ai";
 import logo from "@/assets/sidebarlogo.svg";
 import Image from "next/image";
@@ -125,16 +124,9 @@ export function AdminSidebar({
 
         {/* Bottom Button */}
         <div className="p-2 bg-[#1a1a1a] ">
-          <Button
-            variant="ghost"
-            className="w-full flex justify-center items-center"
-            onPress={() => {
-              // Add your logout logic here
-              console.log("Logout clicked");
-            }}
-          >
+          <button className="w-full flex justify-center items-center py-2">
             <Image alt="" src={logo} height={20} />
-          </Button>
+          </button>
         </div>
       </nav>
     </aside>
